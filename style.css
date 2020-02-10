@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    padding: 5% 7%;
+    margin: 0 0 0 1.5rem ;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+.app{
+    
+    margin: 0 auto;
+    padding: 5%;
+    
+    max-width: 80%;
+    height: 70%;
+    border: 5px solid;
+    border-radius: 5%;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+
+}
+.location{
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.icon{
+    padding: 10%;
+}
+
+
+.temperature{
+    max-width: 100%;
+    text-align: center;
+    padding: 15% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.degree-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-description{
+    text-align: center;
+    padding: 5% 0;
+}
+
+.windspeed{
+    text-align: center;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 45px;
+}
+
+
+@media screen and (max-width:400px){
+
+    
+    .app{
+        max-width: 90%;
+    }
+
+    .temperature{
+        padding: 10% 0;
+    }
+}
+
+@media screen and (max-width:340px){
+    
+    .location-timezone{
+        font-size: 1.5rem;
+    }
+
+    .degree-section h2{
+        font-size: 1.8rem;
+    }
+
+    .degree-section span{
+        display: flex;
+        font-size: 1.8rem;
+    }
+
+    .icon{
+        width: 50%;
+        padding: 5%;
+    }
+}
